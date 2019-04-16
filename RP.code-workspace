@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "Tennessee_Eastman"
+		},
+		{
+			"path": "."
 		}
 	]
 }
