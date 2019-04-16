@@ -59,22 +59,22 @@ def customxlabels(xmin, xmax, numticks, scale=1.0, formstr='%.2f'):
 
 def axisscale(start=0, stop=1, num=None, delta=None):
     ''' returns a scaled x-axis'''
-    print 'num=', num, 'delta=', delta
+    print ('num=', num, 'delta=', delta)
     if num == None:
         if delta == None:
-            print 'axisscale> Error: at least num of delta must be defined!'
+            print( 'axisscale> Error: at least num of delta must be defined!')
             return None
         else:
             num = int(round((stop-start+1)/delta))
-            print 'num=', num, 'delta=', delta
+            print( 'num=', num, 'delta=', delta)
             x = np.linspace(start=start, stop=stop, num=num)
     else:
         if delta != None:
-            print 'axisscale> Error: num and delta defined simultaneously!'
+            print( 'axisscale> Error: num and delta defined simultaneously!')
             return None
         else:
             x = np.linspace(start=start, stop=stop, num=num)
-    print x
+    print( x)
     return x
 
 

@@ -16,8 +16,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from util import pause
 
 def KNN( X, y, classname ):
-
-    print 'Classifier: K-Nearest Neighbor\n'
+    print ('Classifier: K-Nearest Neighbor\n')
     skf = StratifiedKFold(n_splits=10, shuffle=True)
     #skf.get_n_splits(X, y)
     #print skf
@@ -48,10 +47,10 @@ def KNN( X, y, classname ):
         print(cv_cm)
     '''
 
-    print 'KNN Classification Report: '
+    print ('KNN Classification Report: ')
     print (classification_report(y_test_overall, y_pred_overall, target_names=classname, digits=3))
-    print 'Accuracy=', '%.2f %%' % (100*accuracy_score(y_test_overall, y_pred_overall))
-    print 'KNN Confusion Matrix: '
+    print ('Accuracy=', '%.2f %%' % (100*accuracy_score(y_test_overall, y_pred_overall)))
+    print ('KNN Confusion Matrix: ')
     print (confusion_matrix(y_test_overall, y_pred_overall))
 
 
