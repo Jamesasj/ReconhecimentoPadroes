@@ -344,7 +344,7 @@ def main():
 
     feat1 = 49 # First feature
     feat2 = 12 # Second feature
-    te.plotscatter('./all.csv', feat1, feat2)
+    te.plotscatter("./Tennessee_Eastman/te/out/all.csv", feat1, feat2)
     te.visualize_vars(infile=f, dropfigfile='/tmp/outfig1.svg', title='Subconjunto de variaveis', mask=[feat1,feat2])
 
 if __name__ == "__main__":
